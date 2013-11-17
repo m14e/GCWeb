@@ -2,14 +2,14 @@
     <div class="container">
         <div class="row">
             <h2 class="wb-inv">{{#i18n "%tmpl-promo-title"}}{{/i18n}}</h2>            
-            <div class="wb-tabs carousel-s2 playing" data-speed="slow">
+            <div class="wb-tabs tabs-s2" data-speed="slow">
                 <ul role="tablist">
                     <li class="active"><a href="#tab7" title="Tab 1"><img src="{{assets}}/img/promos/one.jpg" alt=""></a></li>
                     <li><a href="#tab8" title="Tab 2"><img src="{{assets}}/img/promos/two.jpg" alt=""></a></li>
                     <li><a href="#tab9" title="Tab 3"><img src="{{assets}}/img/promos/three.jpg" alt=""></a></li>
                 </ul>
                 <div role="tabpanel" id="tab7" class="in fade">
-                    <figure>
+                    <figure class="col-md-12">
                         <img src="{{assets}}/img/promos/one.jpg" alt="">
                         <figcaption>
                             <h2 class="h3">{{#startsWith "en" language }} Banff National Park {{else}} Parc national Banff {{/startsWith}}</h2>
@@ -18,7 +18,7 @@
                     </figure>
                 </div>
                 <div role="tabpanel" id="tab8" class="out fade">
-                    <figure>
+                    <figure class="col-md-12">
                         <img src="{{assets}}/img/promos/two.jpg" alt="">
                         <figcaption>
                             <h2 class="h3">{{#startsWith "en" language }} Algonquin Provincial Park {{else}} Parc Provincial Algonquin {{/startsWith}}</h2>
@@ -27,7 +27,7 @@
                     </figure>
                 </div>
                 <div role="tabpanel" id="tab9" class="out fade">
-                    <figure>
+                    <figure class="col-md-12">
                         <img src="{{assets}}/img/promos/three.jpg" alt="">
                         <figcaption>
                             <h2 class="h3">{{#startsWith "en" language }} Rideau Canal {{else}} Canal Rideau {{/startsWith}}</h2>
@@ -38,5 +38,4 @@
             </div>
         </div>
     </div>
-
 </aside>
